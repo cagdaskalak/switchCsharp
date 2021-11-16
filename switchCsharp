@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s; int a;
+            Console.Write("Kaçıncı Sınıftasınız : ");
+            s = Console.ReadLine();
+            a = Int32.Parse(s);
+            switch (a)
+            {
+                case (0):
+                case (1): Console.WriteLine("Daha Yenisiniz"); break;
+                case (2): Console.WriteLine("Mirasçısınız"); break;
+                case (3): Console.WriteLine("Ev Sahibisiniz"); break;
+                case (4): Console.WriteLine("Misafirsiniz"); break;
+                default: Console.WriteLine("Siz okulu uzatmışsınız"); break;
+
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
